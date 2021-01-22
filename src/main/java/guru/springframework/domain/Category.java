@@ -13,7 +13,7 @@ public class Category {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String description;
-
+    //from this side we set the relation and the mapping property in the recipe class
     @ManyToMany(mappedBy = "categories")
     private Set<Recipe> recipes;
 
